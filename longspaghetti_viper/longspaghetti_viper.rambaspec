@@ -1,0 +1,40 @@
+# Template information section
+name: longspaghetti_viper
+summary: general viper module
+author: longspaghetti
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+
+# Module
+
+- {name: Module/Module.swift, path: Code/Module/Module.swift.liquid}
+
+# Assembly
+- {name: Assembly/Assembly.swift, path: Code/Assembly/Assembly.swift.liquid}
+
+# View layer
+- {name: View/ViewInput.swift, path: Code/View/ViewInput.swift.liquid}
+- {name: View/ViewOutput.swift, path: Code/View/ViewOutput.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/ViewController.swift.liquid}
+
+# Presenter
+- {name: Presenter/ModuleInput.swift, path: Code/Presenter/ModuleInput.swift.liquid}
+- {name: Presenter/Presenter.swift, path: Code/Presenter/Presenter.swift.liquid}
+
+# Interactor
+- {name: Interactor/InteractorInput.swift, path: Code/Interactor/InteractorInput.swift.liquid}
+- {name: Interactor/InteractorOutput.swift, path: Code/Interactor/InteractorOutput.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Code/Interactor/Interactor.swift.liquid}
+
+# Router
+- {name: Router/RouterInput.swift, path: Code/Router/RouterInput.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/Router.swift.liquid}
+
+
+# The declarations for test files
+# TBD
+#test_files:
+#- {name: , path: Tests/}
