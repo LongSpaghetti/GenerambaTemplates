@@ -1,0 +1,33 @@
+{% include 'header' %}
+
+final class {{ prefix }}{{ module_info.name }}Presenter {
+
+    // MARK: - Properties
+
+    private weak var view: {{ prefix }}{{ module_info.name }}ViewInput?
+    private let router: {{ prefix }}{{ module_info.name }}RouterInput
+
+    /// Инициализирует презентер с переданными зависимостями
+    /// - Parameters:
+    ///   - view: Экземпляр представления
+    ///   - router: Экземпляр роутера
+    init(view: {{ prefix }}{{ module_info.name }}ViewInput, router: {{ prefix }}{{ module_info.name }}RouterInput) {
+        self.view = view
+        self.router = router
+    }
+}
+
+// MARK: - {{ prefix }}{{ module_info.name }}ViewOutput
+
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}ViewOutput {
+
+    func viewDidLoad() {
+        view?.setupInitialState()
+    }
+}
+
+// MARK: - {{ prefix }}{{ module_info.name }}ModuleInput
+
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}ModuleInput {
+
+}

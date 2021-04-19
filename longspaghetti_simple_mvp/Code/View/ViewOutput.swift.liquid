@@ -1,0 +1,8 @@
+{% include 'header' %}
+
+/// <#Documentation#>
+protocol {{ prefix }}{{ module_info.name }}ViewOutput: AnyObject {
+
+    /// Вызывается после загрузки View
+    func viewDidLoad()
+}

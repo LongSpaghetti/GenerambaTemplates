@@ -1,0 +1,20 @@
+{% include 'header' %}
+
+import UIKit
+
+/// <#Documentation#>
+final class {{ prefix }}{{ module_info.name }}Router {
+
+    private weak var transitionHandler: UIViewController?
+
+    /// Инициализирует роутер с экраном с которого производятся переходы
+    /// - Parameter transitionHandler: Экран с которого производятся переходы
+    init(transitionHandler: UIViewController) {
+        self.transitionHandler = transitionHandler
+    }
+}
+
+// MARK: - {{ prefix }}{{ module_info.name }}RouterInput
+
+extension {{ prefix }}{{ module_info.name }}Router: {{ prefix }}{{ module_info.name }}RouterInput {
+}

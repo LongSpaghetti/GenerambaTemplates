@@ -1,0 +1,20 @@
+{% include 'header' %}
+
+import UIKit
+
+/// <#Documentation#>
+final class {{ prefix }}{{ module_info.name }}Assembly {
+
+    /// <#Documentation#>
+    func assemble() -> UIViewController {
+
+        let viewController = {{ prefix }}{{ module_info.name }}ViewController()
+        let router = {{ prefix }}{{ module_info.name }}Router(transitionHandler: viewController)
+
+        let presenter = {{ prefix }}{{ module_info.name }}Presenter(view: viewController, router: router)
+
+        viewController.output = presenter
+
+        return viewController
+    }
+}

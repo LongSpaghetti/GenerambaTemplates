@@ -1,0 +1,25 @@
+# Template information section
+name: longspaghetti_simple_mvp
+summary: mvp module without injection frameworks
+author: longspaghetti
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+
+# View layer
+- {name: View/ViewController.swift, path: Code/ViewController.swift.liquid}
+- {name: View/ViewOutput.swift, path: Code/ViewOutput.swift.liquid}
+- {name: View/ViewInput.swift, path: Code/ViewInput.swift.liquid}
+
+# Presenter
+- {name: Presenter/Presenter.swift, path: Code/Presenter/Presenter.swift.liquid}
+- {name: Presenter/ModuleInput.swift, path: Code/Presenter/ModuleInput.swift.liquid}
+
+# Router
+- {name: Router/Router.swift, path: Code/Router/Router.swift.liquid}
+- {name: Router/RouterInput.swift, path: Code/Router/RouterInput.swift.liquid}
+
+# Assembly
+- {name: Assembly/Assembly.swift, path: Code/Assembly/Assembly.swift.liquid}
